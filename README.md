@@ -26,4 +26,13 @@ lamb_arr ->
 Send array for Different arrays you want. If you don't send array it will automatically set this to
 lamb_arr = [0.01,0.03,0.1,0.3,1,3,10,30]
 
-I have already found weights for mentioned dataset.
+I have already found weights for mentioned dataset in "weights.mat".
+
+Also if you want to you can skip features using "[]"
+Ex:
+trainDataset("some directory","some directory",[],90,[])
+Here I skipped Hidden Layer size so it will decide automatically.
+Also I skipped options so these will generate otions.
+
+If you found any problem or bug Mail me at -
+"shubhamsheth@hotmail.com"
