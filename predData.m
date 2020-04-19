@@ -12,7 +12,7 @@ load(w_name);
         fprintf("");
         return;
     end
-[~,~,result] = costFN(nn_params,input_layer_size,hidden_layer_size,num_labels,X,0,lambda_final);
+[~,~,result] = costFN(nn_params,input_layer_size,hidden_layer_size,num_labels,X,0,lambda);
 no = predictNo(result);
 fprintf("Predicted Number is %f",no);
 end
