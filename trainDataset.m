@@ -35,7 +35,7 @@ Training_Set_Data_Size = size(X);
 Label_Set_Data_Size = size(Y);
 t_set = uint64(size(X,1)*t_set/100)
 if ~exist('h_size','var')
-   h_size = uint8(size(X',1)/8);
+   h_size = uint64(size(X',1)/8);
    fprintf("As You have not mentioned the size of Hidden Layer , Selecting Hidden Layer of %d", h_size);
 end
 input_layer_size = size(X',1)        % 50 x 50 img -> Reshaped into 2500 features
