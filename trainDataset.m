@@ -81,6 +81,7 @@ costFunction = @(p) costFN(p,input_layer_size,hidden_layer_size,num_labels, X, Y
 fprintf("Combination Found out to be Cost : %f\tLambda : %f with error of %f",sorted_J(1,2),sorted_J(1,3),sorted_J(1,1));
 %fprintf("Program Paused , Please Enter to Continue");
 %pause;
+lambda = lambda_final
 filename = input("\nEnter Name of File to Save All Parameters : ",'s');
-    save(filename,'nn_params','input_layer_size','hidden_layer_size','num_labels','lambda_final');
+    save(filename,'nn_params','input_layer_size','hidden_layer_size','num_labels','lambda');
 end
