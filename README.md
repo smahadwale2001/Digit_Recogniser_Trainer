@@ -34,5 +34,18 @@ trainDataset("some directory","some directory",[],90,[])
 Here I skipped Hidden Layer size so it will decide automatically.
 Also I skipped options so these will generate otions.
 
+On line 33 of TrainDataset you can load data using your function. Only Remember you have to assign Y to size of [10 x m] matrix.
+m -> Total Number of Dataset
+suppose if first no is 4, therefore Y(:,1) = [0,0,0,0,1,0,0,0,0,0]
+X will be size of [m x features_number]
+
+How to use Preddata ->
+Usage :
+no = predData(f,w_name,opt);
+f -> you can send 2D image filename or Directly feature matrix of [1 , features].
+w_name -> This is the file saved in trainDataset() function. (.mat file , at the end of trainDataset function you are asked for                   filename, you have to use that name here)
+opt -> Send this 1 for sending direct Features and send 2 for filename.
+
+
 If you found any problem or bug Mail me at -
 "shubhamsheth@hotmail.com"
